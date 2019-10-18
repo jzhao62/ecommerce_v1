@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 
 import {Card}from './models/card.js'
-import  {MyDirectionRender} from "./models/Marker/MyDirectionRender";
 import {MyCoordinateMarker, MyMapComponent} from "./models/Marker/MapMarker";
 
 
@@ -37,9 +36,6 @@ class App extends Component {
             <div style={style}>
 
                 <Card />
-
-
-                <MyDirectionRender/>
 
 
             </div>
