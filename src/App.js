@@ -1,13 +1,30 @@
-import React, { Component } from 'react';
-import {Card}from './models/card.js'
+import React  from 'react';
+
+import {
+    Collapse, DropdownItem, DropdownMenu,
+    DropdownToggle,
+    Nav,
+    Navbar,
+    NavbarBrand,
+    NavbarToggler,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown
+} from 'reactstrap';
+import {Header} from "./components/Header";
 
 
 
 
 const  App = () => {
+
+    const onClickButton = () => {
+        console.log('GGWP')
+    }
+
     return (
         <div>
-            <Card />
+            <Header/>
         </div>
     )
 
