@@ -11,58 +11,37 @@ import {
     UncontrolledDropdown
 } from 'reactstrap';
 
+import "../App.css"
+
 export const Header = () => {
 
     return (
+
         <Navbar
-            color="light"
-            expand="md"
-            light
+            className='nav-bar'
         >
             <NavbarBrand href="/">
-                reactstrap
+                Shop now
             </NavbarBrand>
-            <NavbarToggler onClick={function noRefCheck(){}} />
-            <Collapse navbar>
-                <Nav
-                    className="me-auto"
-                    navbar
-                >
-                    <NavItem>
-                        <NavLink href="/components/">
-                            Components
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="https://github.com/reactstrap/reactstrap">
-                            GitHub
-                        </NavLink>
-                    </NavItem>
-                    <UncontrolledDropdown
-                        inNavbar
-                        nav
-                    >
-                        <DropdownToggle
-                            caret
-                            nav
-                        >
-                            Options
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                            <DropdownItem>
-                                Option 1
-                            </DropdownItem>
-                            <DropdownItem>
-                                Option 2
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>
-                                Reset
-                            </DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
-                </Nav>
-            </Collapse>
+
+            <NavbarBrand href="/">
+                my account
+            </NavbarBrand>
+
+            <NavbarBrand href="/">
+                Shopping Cart
+            </NavbarBrand>
+
+            <NavbarBrand href="/">
+                About Us
+            </NavbarBrand>
+
+            <NavbarBrand href="/">
+                Contact
+            </NavbarBrand>
+
+
+
         </Navbar>
     )
 }

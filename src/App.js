@@ -1,5 +1,4 @@
 import React  from 'react';
-
 import {
     Collapse, DropdownItem, DropdownMenu,
     DropdownToggle,
@@ -13,6 +12,9 @@ import {
 } from 'reactstrap';
 import {Header} from "./components/Header";
 
+import "./App.css"
+
+const logo = require('./skyrich.png')
 
 
 
@@ -24,6 +26,9 @@ const  App = () => {
 
     return (
         <div>
+            <div className='App-title'>
+                <img src={logo} className='App-logo'/>
+            </div>
             <Header/>
         </div>
     )
