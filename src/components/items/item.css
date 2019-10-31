@@ -1,0 +1,21 @@
+.container {
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    border: 1px solid blue
+
+
+}
+
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+}
